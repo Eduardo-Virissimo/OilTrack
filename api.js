@@ -1,6 +1,37 @@
+fetch("./mocks/bacias.json")
+    .then(response => response.json()) 
+    .then(data => {
+
+        data.bacias.forEach(bacia =>{
+            L.polygon(bacia.coords, {
+                color: bacia.color,
+                weight: 2,
+                opacity: 0.6
+            }).addTo(map).bindPopup(bacia.name);
+        })
+    })
+    .catch(error => {
+        console.log('Erro ao carregar o JSON:', error);
+    });
+
+
+    fetch("./mocks/pocos.json")
+    .then(response => response.json()) 
+    .then(data => {
+        console.log(data.poco);
+        data.poco.forEach(poco =>{
+            const marker = L.marker(poco.coord).addTo(map);
+            marker.bindPopup(poco.name).openPopup();
+        }) 
+
+    })
+    .catch(error => {
+        console.log('Erro ao carregar o JSON:', error);
+    });
+
 // Inicializa o mapa com a vista central e desativa os controles de zoom
 const map = L.map('map', {
-    center: [20.0, -60.0],
+    center: [-23.5505, -46.6333],
     zoom: 4,
     zoomControl: true // Desativa os botões de zoom
 });
@@ -23,21 +54,6 @@ map.options.minZoom = 2;
 map.options.maxZoom = 19;
 
 
-// Coordenadas da trilha de óleo
-const oiltrackCoordinates = [
-    [-23.5505, -46.6333], // Ponto inicial
-    [-23.552, -46.635],   // Terceiro ponto
-    [-23.553, -46.636]    // Ponto final
-];
-
-// Adiciona marcadores para cada ponto da trilha
-oiltrackCoordinates.forEach((coord, index) => {
-    const marker = L.marker(coord).addTo(map);
-    marker.bindPopup(`Ponto ${index + 1}`).openPopup();
-});
-
-
-L.polygon(item.coords).addTo(map);
 
 
 // Cria a polilinha para a trilha de óleo
