@@ -1,8 +1,8 @@
 // Inicializa o mapa com a vista central e desativa os controles de zoom
 const map = L.map('map', {
-    center: [-23.5505, -46.6333],
+    center: [20.0, -60.0],
     zoom: 4,
-    zoomControl: false // Desativa os botões de zoom
+    zoomControl: true // Desativa os botões de zoom
 });
 
 // Adiciona a camada de tile do OpenStreetMap
@@ -26,7 +26,6 @@ map.options.maxZoom = 19;
 // Coordenadas da trilha de óleo
 const oiltrackCoordinates = [
     [-23.5505, -46.6333], // Ponto inicial
-    [-23.551, -46.634],   // Segundo ponto
     [-23.552, -46.635],   // Terceiro ponto
     [-23.553, -46.636]    // Ponto final
 ];
@@ -36,6 +35,10 @@ oiltrackCoordinates.forEach((coord, index) => {
     const marker = L.marker(coord).addTo(map);
     marker.bindPopup(`Ponto ${index + 1}`).openPopup();
 });
+
+
+L.polygon(item.coords).addTo(map);
+
 
 // Cria a polilinha para a trilha de óleo
 const oiltrack = L.polyline(oiltrackCoordinates, {
