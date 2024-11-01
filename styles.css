@@ -9,7 +9,7 @@
 body, html {
   width: 100%;
   height: 100%;
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif; /* Definindo a fonte Open Sans */
 }
 
 /* Mapa ocupa toda a tela */
@@ -25,12 +25,15 @@ body, html {
   position: fixed;
   top: 0;
   left: -250px; /* Escondido fora da tela inicialmente */
-  background-color: rgba(51, 51, 51, 0.95);
-  color: #fff;
-  padding: 20px;
+  background: linear-gradient(0deg, rgba(88,129,87,1) 0%, rgba(52,78,65,1) 100%);
+  padding: 40px;
   transition: 0.3s ease;
   z-index: 1000;
   box-shadow: 3px 0 5px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  /*justify-content: center; /* Centraliza verticalmente */
 }
 
 /* Menu ativo */
@@ -40,29 +43,38 @@ body, html {
 
 /* Título do menu */
 #sidebar h2 {
-  color: #f0a500;
+  color: #A3B18A; /* Cor do título do menu */
   margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 28px; /* Tamanho maior para o título */
+  font-weight: bold; /* Negrito para o título */
 }
 
 /* Links do menu */
 #sidebar ul {
   list-style-type: none;
   padding: 0;
+  width: 100%; /* Para que os links ocupem a largura total */
 }
 
 #sidebar ul li {
-  margin: 20px 0;
+  margin: 40px 0;
+  text-align: center; /* Centraliza o texto dos links */
 }
 
 #sidebar ul li a {
-  color: #fff;
+  color: #DAD7CD; /* Cor dos links */
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px; /* Tamanho maior para os links */
   transition: color 0.3s;
+  font-weight: bold; /* Negrito para os links */
+  background-color: #588157;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 #sidebar ul li a:hover {
-  color: #f0a500;
+  color: #A3B18A; /* Cor dos links ao passar o mouse */
 }
 
 /* Botão sanduíche */
@@ -73,7 +85,7 @@ body, html {
   font-size: 30px;
   background: none;
   border: none;
-  color: #333;
+  color: #344E41; /* Cor do botão */
   cursor: pointer;
   z-index: 1100;
   outline: none;
@@ -85,7 +97,7 @@ body, html {
   display: block;
   width: 30px;
   height: 4px;
-  background-color: #333;
+  background-color: #3A5A40; /* Cor das barras do botão */
   margin: 5px 0;
   transition: 0.4s;
 }
