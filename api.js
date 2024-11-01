@@ -1,9 +1,8 @@
-// Inicializa o mapa com uma vista central e um nível de zoom
+// Inicializa o mapa com a vista central e desativa os controles de zoom
 const map = L.map('map', {
-    center: [-23.5505, -46.6333], // Coordenadas iniciais
-    zoom: 2,                      // Nível de zoom inicial
-    minZoom: 2,                   // Limite mínimo de zoom
-    maxZoom: 19                   // Limite máximo de zoom (opcional, mas você pode definir para não ultrapassar o zoom máximo padrão)
+    center: [-23.5505, -46.6333],
+    zoom: 4,
+    zoomControl: false // Desativa os botões de zoom
 });
 
 // Adiciona a camada de tile do OpenStreetMap
@@ -12,13 +11,17 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors'
 }).addTo(map);
 
-// Define os limites do mapa para não ultrapassar os polos
+// Define limites para o mapa para que ele não ultrapasse os polos
 const bounds = [
     [90, -180], // Nordeste (Polo Norte)
     [-90, 180]  // Sudoeste (Antártica)
 ];
-
 map.setMaxBounds(bounds);
+
+// Limites de zoom
+map.options.minZoom = 2;
+map.options.maxZoom = 19;
+
 
 // Coordenadas da trilha de óleo
 const oiltrackCoordinates = [
