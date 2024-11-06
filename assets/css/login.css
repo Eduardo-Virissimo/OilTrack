@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: url("../img/chu.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 20px;
+}
+
+.form-container {
+  display: flex;
+  width: 1000px;
+  height: 600px;
+  border: 3px solid rgba(255,255,255,0.3);
+  border-radius: 30px;
+  backdrop-filter: blur(20px);
+}
+
+.col-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 55%;
+  background: rgba(255,255,255,0.3);
+  backdrop-filter: blur(30px);
+  border-radius: 0 30% 20% 0;
+  transition: border-radius .3s;
+}
+
+.image-layer {
+  position: relative;
+
+}
+
+.form-image-main {
+  width: 400px;
+}
+
+.form-image {
+  position: absolute;
+  left: 0;
+  width: 400px;
+
+}
+
+.featured-words {
+  text-align: center;
+  color: #fff;
+  width: 300px;
+
+}
+
+.featured-words span {
+  font-weight: 600;
+  color: #212640;
+}
