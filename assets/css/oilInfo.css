@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
+
+
+body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;   
+    display: flex;
+    align-items: center;
+
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.table_options{
+    width: 15%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    border-radius: 9px;
+}
+
+.table_options > li{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.table_options > li > a{
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+.table_options > li:hover {
+    background-color: #8f97793b;
+}
+
+.table{
+    width: 85%;
+    height: 100%;
+}
+
+.table_filter{
+    width: 100%;
+    height: 10%;
+    background-color: #8f97793b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 15px 0 0;
+
+}
+.table_filter > button {
+    padding: 18px;
+    border: 0px;
+    margin-left: 20px;
+    font-size: .9rem;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    background-color: white;
+    display: flex;
+    gap: 5px;
+
+}
+.table_filter > button > i{
+    font-size: 1.3rem;
+}
+.search{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-right: 15px;
+}
+.search > input{
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(17, 17, 17, 0.705);
+    padding: 5px;
+    height: 60%;
+    border-radius: 10px;
+    font-weight: 800;
+
+}
+.search > select{
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(17, 17, 17, 0.705);
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 800;
+    height: 60%;
+}
+.search > button{
+    padding: 13px;
+    border: 0px;
+    margin-left: 20px;
+    font-size: .9rem;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    background-color: rgb(41, 104, 219);
+    color: white;
+    display: flex;
+    gap: 5px;
+}
+
+.tableBg{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: end;
+    background-color: #8f97793b;
+}
+.tableBg >table{
+    background-color: white;
+    width: 90%;
+    height: 100%;
+    border-radius: 15px;
+    overflow-y: auto;
+}
+.tableBg>table > thead> tr > th{
+    font-size: 1.2rem;
+    padding: 15px;
+    max-width: 40px;
+    color: black;
+    text-align: center;
+}
+.tableBg>table > thead{
+    border-bottom:1px solid rgba(0, 0, 0, 0.055) ;
+}
+
+.tableBg>table > tbody> tr > th{
+    font-size: 1.2rem;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    min-height: 50px;
+}
+
+.tableBg table tbody {
+    display: block;
+    overflow-y: auto;
+    max-height: 83vh;
+    width: 100%;
+}
+
+.tableBg table thead, .tableBg table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tableBg table th, .tableBg table td {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+}

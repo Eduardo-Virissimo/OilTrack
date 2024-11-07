@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+          <!-- Botão Sanduíche -->
+          <button class="hamburger" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    
+        <!-- Menu Lateral -->
+        <div id="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Mapa</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+
+            <div class="container">
+
+                <div class="table_options">
+                    <li> <a href="#"> <i class='bx bx-globe'></i> Bacia</a></li>
+                    <li><a href="#"><i class='bx bxs-filter-alt' ></i> Poços</a></li>
+                </div>
+                <div class="table">
+                    <div class="table_filter">
+                        <button> <i class='bx bx-export'></i>  Export</button>
+                        <div class="search">
+                            <select name="Filtro" id="">
+                                <option  disabled selected>Filtrar por</option>
+                                <option >Ordem Alfabetica</option>
+                                <option >Tamanho</option>
+                                <option >Tipo de fluido</option>
+
+                            </select>
+                            
+                            <input placeholder="Escreva o nome:" type="text">
+                            <button>Search</button>
+                        </div>
+                        
+                    </div>
+                    <div class="tableBg">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Estado</th>
+                                    <th>Cidade</th>
+                                    <th>Tamanho</th>
+                                    <th>Tipo de fluido</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Bacia de Campos</td>
+                                    <td>Rio de Janeiro</td>
+                                    <td>Macaé</td>
+                                    <td>100,000</td>
+                                    <td>Petróleo</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacia do Santos</td>
+                                    <td>São Paulo</td>
+                                    <td>Santos</td>
+                                    <td>350,000</td>
+                                    <td>Petróleo e Gás</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacia Potiguar</td>
+                                    <td>Rio Grande do Norte</td>
+                                    <td>Mossoró</td>
+                                    <td>50,000</td>
+                                    <td>Petróleo</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacia do Recôncavo</td>
+                                    <td>Bahia</td>
+                                    <td>Salvador</td>
+                                    <td>11,500</td>
+                                    <td>Petróleo</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacia do Espírito Santo</td>
+                                    <td>Espírito Santo</td>
+                                    <td>Vila Velha</td>
+                                    <td>40,000</td>
+                                    <td>Petróleo e Gás</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacia de Sergipe-Alagoas</td>
+                                    <td>Sergipe</td>
+                                    <td>Aracaju</td>
+                                    <td>25,000</td>
+                                    <td>Petróleo e Gás</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacia do Parnaíba</td>
+                                    <td>Maranhão</td>
+                                    <td>São Luís</td>
+                                    <td>600,000</td>
+                                    <td>Gás</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacia do Paraná</td>
+                                    <td>Paraná</td>
+                                    <td>Curitiba</td>
+                                    <td>1,000,000</td>
+                                    <td>Petróleo e Gás</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacia do Acre</td>
+                                    <td>Acre</td>
+                                    <td>Rio Branco</td>
+                                    <td>160,000</td>
+                                    <td>Gás</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacia do Solimões</td>
+                                    <td>Amazonas</td>
+                                    <td>Coari</td>
+                                    <td>500,000</td>
+                                    <td>Petróleo e Gás</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacia de Campos</td>
+                                    <td>Rio de Janeiro</td>
+                                    <td>Macaé</td>
+                                    <td>100,000</td>
+                                    <td>Petróleo</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacia do Santos</td>
+                                    <td>São Paulo</td>
+                                    <td>Santos</td>
+                                    <td>350,000</td>
+                                    <td>Petróleo e Gás</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacia Potiguar</td>
+                                    <td>Rio Grande do Norte</td>
+                                    <td>Mossoró</td>
+                                    <td>50,000</td>
+                                    <td>Petróleo</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacia do Recôncavo</td>
+                                    <td>Bahia</td>
+                                    <td>Salvador</td>
+                                    <td>11,500</td>
+                                    <td>Petróleo</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacia do Espírito Santo</td>
+                                    <td>Espírito Santo</td>
+                                    <td>Vila Velha</td>
+                                    <td>40,000</td>
+                                    <td>Petróleo e Gás</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacia de Sergipe-Alagoas</td>
+                                    <td>Sergipe</td>
+                                    <td>Aracaju</td>
+                                    <td>25,000</td>
+                                    <td>Petróleo e Gás</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacia do Parnaíba</td>
+                                    <td>Maranhão</td>
+                                    <td>São Luís</td>
+                                    <td>600,000</td>
+                                    <td>Gás</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacia do Paraná</td>
+                                    <td>Paraná</td>
+                                    <td>Curitiba</td>
+                                    <td>1,000,000</td>
+                                    <td>Petróleo e Gás</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacia do Acre</td>
+                                    <td>Acre</td>
+                                    <td>Rio Branco</td>
+                                    <td>160,000</td>
+                                    <td>Gás</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacia do Solimões</td>
+                                    <td>Amazonas</td>
+                                    <td>Coari</td>
+                                    <td>500,000</td>
+                                    <td>Petróleo e Gás</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    
+</body>
+<script>
+        
+    // Função para alternar a visibilidade do menu lateral
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const hamburger = document.querySelector('.hamburger');
+        sidebar.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    }
+</script>
+<link rel="stylesheet" href="/assets/css/oilInfo.css">
+</html>
