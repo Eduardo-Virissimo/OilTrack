@@ -3,53 +3,92 @@
     {
       "name": "Poço Tupi",
       "coord": [-23.7025, -44.0537],
-      "bacia": "Bacia de Santos"
+      "bacia": "Bacia de Santos",
+      "cidade": "Angra dos Reis",
+      "estado": "Rio de Janeiro",
+      "tipo_fluidos": "Óleo",
+      "tamanho_km2": 150.5
     },
     {
       "name": "Poço Guará",
       "coord": [-23.7050, -44.0550],
-      "bacia": "Bacia de Santos"
+      "bacia": "Bacia de Santos",
+      "cidade": "Angra dos Reis",
+      "estado": "Rio de Janeiro",
+      "tipo_fluidos": "Gás",
+      "tamanho_km2": 120.0
     },
     {
       "name": "Poço Franco",
       "coord": [-23.5999, -44.0866],
-      "bacia": "Bacia de Campos"
+      "bacia": "Bacia de Campos",
+      "cidade": "Campos dos Goytacazes",
+      "estado": "Rio de Janeiro",
+      "tipo_fluidos": "Óleo",
+      "tamanho_km2": 200.0
     },
     {
       "name": "Poço Sapinhoá",
       "coord": [-23.6441, -44.2137],
-      "bacia": "Bacia de Campos"
+      "bacia": "Bacia de Campos",
+      "cidade": "Campos dos Goytacazes",
+      "estado": "Rio de Janeiro",
+      "tipo_fluidos": "Gás",
+      "tamanho_km2": 85.3
     },
     {
       "name": "Poço Carcará",
       "coord": [-23.4810, -45.0048],
-      "bacia": "Bacia de Santos"
+      "bacia": "Bacia de Santos",
+      "cidade": "São João da Barra",
+      "estado": "Rio de Janeiro",
+      "tipo_fluidos": "Óleo",
+      "tamanho_km2": 170.2
     },
     {
       "name": "Poço Parque das Conchas",
       "coord": [-22.8091, -41.4008],
-      "bacia": "Bacia de Campos"
+      "bacia": "Bacia de Campos",
+      "cidade": "Macau",
+      "estado": "Rio Grande do Norte",
+      "tipo_fluidos": "Gás",
+      "tamanho_km2": 130.0
     },
     {
       "name": "Poço Marlim",
       "coord": [-22.7373, -41.3434],
-      "bacia": "Bacia de Campos"
+      "bacia": "Bacia de Campos",
+      "cidade": "Macau",
+      "estado": "Rio Grande do Norte",
+      "tipo_fluidos": "Óleo",
+      "tamanho_km2": 210.8
     },
     {
       "name": "Poço C-21",
       "coord": [-5.155002, -36.258680],
-      "bacia": "Bacia Potiguar"
+      "bacia": "Bacia Potiguar",
+      "cidade": "Natal",
+      "estado": "Rio Grande do Norte",
+      "tipo_fluidos": "Gás",
+      "tamanho_km2": 100.0
     },
     {
       "name": "Poço Atum",
       "coord": [-10.3025, -37.5125],
-      "bacia": "Bacia de Sergipe-Alagoas"
+      "bacia": "Bacia de Sergipe-Alagoas",
+      "cidade": "Aracaju",
+      "estado": "Sergipe",
+      "tipo_fluidos": "Óleo",
+      "tamanho_km2": 90.0
     },
     {
       "name": "Poço Coral",
       "coord": [-10.4050, -37.5890],
-      "bacia": "Bacia de Sergipe-Alagoas"
+      "bacia": "Bacia de Sergipe-Alagoas",
+      "cidade": "Aracaju",
+      "estado": "Sergipe",
+      "tipo_fluidos": "Gás",
+      "tamanho_km2": 75.5
     }
   ]
 }
-  

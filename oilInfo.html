@@ -31,8 +31,8 @@
             <div class="container">
 
                 <div class="table_options">
-                    <li> <a href="#"> <i class='bx bx-globe'></i> Bacia</a></li>
-                    <li><a href="#"><i class='bx bxs-filter-alt' ></i> Poços</a></li>
+                    <li> <a href="#" onclick="baciaTable()"> <i class='bx bx-globe'></i> Bacia</a></li>
+                    <li><a href="#" onclick="pocoTable()"><i class='bx bxs-filter-alt' ></i> Poços</a></li>
                 </div>
                 <div class="table">
                     <div class="table_filter">
@@ -52,13 +52,13 @@
                         
                     </div>
                     <div class="tableBg">
-                        <table>
+                        <table id="tb">
                             <thead>
                                 <tr>
                                     <th>Nome</th>
                                     <th>Estado</th>
                                     <th>Cidade</th>
-                                    <th>Tamanho</th>
+                                    <th>Tamanho em km²</th>
                                     <th>Tipo de fluido</th>
                                 </tr>
                             </thead>
