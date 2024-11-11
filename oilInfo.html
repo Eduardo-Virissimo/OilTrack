@@ -38,7 +38,7 @@
                     <div class="table_filter">
                         <button> <i class='bx bx-export'></i>  Export</button>
                         <div class="search">
-                            <select name="Filtro" id="">
+                            <select name="Filtro" id="filterSelect">
                                 <option  disabled selected>Filtrar por</option>
                                 <option >Ordem Alfabetica</option>
                                 <option >Tamanho</option>
@@ -46,8 +46,8 @@
 
                             </select>
                             
-                            <input placeholder="Escreva o nome:" type="text">
-                            <button>Search</button>
+                            <input placeholder="Escreva o nome:" id="filterInput" type="text">
+                            <button onclick="buscaNome()">Search</button>
                         </div>
                         
                     </div>
