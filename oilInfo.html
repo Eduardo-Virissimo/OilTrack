@@ -38,11 +38,11 @@
                     <div class="table_filter">
                         <button> <i class='bx bx-export'></i>  Export</button>
                         <div class="search">
-                            <select name="Filtro" id="filterSelect">
+                            <select name="Filtro" onchange="filtroSelect()" id="filterSelect">
                                 <option  disabled selected>Filtrar por</option>
-                                <option >Ordem Alfabetica</option>
-                                <option >Tamanho</option>
-                                <option >Tipo de fluido</option>
+                                <option id="alphabet" value="alphabet">Ordem Alfabetica</option>
+                                <option id="size" value="size" >Tamanho</option>
+                                <option id="type" value="type" >Tipo de fluido</option>
 
                             </select>
                             
