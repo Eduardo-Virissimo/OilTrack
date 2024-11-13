@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oil Track App</title>
+    <title>OilTrack</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="assets/css/hamburguer.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="icon" href="assets/img/iconfav.png" type="image/x-icon">
 </head>
 <body>
     <!-- Botão Sanduíche -->
@@ -26,6 +27,12 @@
             <li><a href="oilInfo.html">Tabelas</a></li>
             <li><a href="#">Contato</a></li>
         </ul>
+        
+        <!-- Credits Section -->
+        <div class="credits">
+            <p>&copy; 2024 OilTrack</p>
+            <p>Desenvolvido por Eduardo, Enrik, Guilherme e João</p>
+        </div>
     </div>
 
     <!-- Div do Mapa -->
@@ -33,7 +40,6 @@
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
-        
         // Função para alternar a visibilidade do menu lateral
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
@@ -41,7 +47,6 @@
             sidebar.classList.toggle('active');
             hamburger.classList.toggle('active');
         }
-        
     </script>
     <script src="./mocks/mocks.js"></script>
     <script src="api.js"></script>

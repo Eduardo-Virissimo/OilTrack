@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
 /* Reset básico */
 * {
   margin: 0;
@@ -147,4 +148,13 @@ html {
   font-size: 16px;
   margin: 5px 0;
   font-weight: 500;
+}
+
+.credits {
+  font-size: 12px;
+  color: #ccc;
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  margin-top: auto; /* Ensures credits are at the bottom */
 }

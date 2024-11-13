@@ -33,7 +33,8 @@ fetch("./mocks/bacias.json")
 const map = L.map('map', {
     center: [-23.5505, -46.6333],
     zoom: 4,
-    zoomControl: true // Desativa os botões de zoom
+    zoomControl: true, // Desativa os botões de zoom
+    attributionControl: false
 });
 
 // Adiciona a camada de tile do OpenStreetMap
@@ -52,9 +53,6 @@ map.setMaxBounds(bounds);
 // Limites de zoom
 map.options.minZoom = 2;
 map.options.maxZoom = 19;
-
-
-
 
 // Cria a polilinha para a trilha de óleo
 const oiltrack = L.polyline(oiltrackCoordinates, {
