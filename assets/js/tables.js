@@ -8,6 +8,15 @@ var pocos;
 
 var isBacia = true;
 
+
+function exportarParaPDF() {
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF();
+  doc.autoTable({ html: '#tb' });
+  doc.save('tabela.pdf');
+}
+
+
 function filtroSelect() {
   var select = document.getElementById("filterSelect").value;
   console.log(select);

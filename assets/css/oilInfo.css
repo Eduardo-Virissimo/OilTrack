@@ -1,170 +1,187 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
 
-
-body, html{
+body, html {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;   
     display: flex;
     align-items: center;
-
+    background-color: #f1f2f6;
+    font-family: 'Poppins', sans-serif;
+    color: #212240;
 }
 
-.container{
+.container {
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 20px;
+    gap: 20px;
 }
-.table_options{
+
+.table_options {
     width: 15%;
     height: 60%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    display: flex;
-    border-radius: 9px;
+    background-color: #212240;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 10px;
+    gap: 10px;
 }
 
-.table_options > li{
-    height: 15%;
+.table_options > li {
     width: 100%;
+    height: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.table_options > li > a{
+
+.table_options > li > a {
     width: 100%;
     height: 100%;
     text-decoration: none;
-    color: rgb(34, 34, 34);
-    font-size: 1.5rem;
+    color: #e0e0e0;
+    font-size: 1.2rem;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 500;
 }
+
 .table_options > li > a:hover {
-    background-color: #8f97793b;
+    background-color: #3a3b6a;
+    color: #fff;
 }
 
-.table{
-    width: 85%;
+.table {
+    width: 80%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
 }
 
-.table_filter{
+.table_filter {
     width: 100%;
     height: 10%;
-    background-color: #8f97793b;
+    background-color: #212240;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 0 15px 0 0;
-
+    padding: 0 20px;
+    border-bottom: 1px solid #ddd;
 }
+
 .table_filter > button {
-    padding: 18px;
-    border: 0px;
-    margin-left: 20px;
-    font-size: .9rem;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    background-color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    background-color: #212240;
+    color: #fff;
     display: flex;
-    gap: 5px;
-
-}
-.table_filter > button > i{
-    font-size: 1.3rem;
-}
-.search{
-    display: flex;
-    width: 40%;
-    height: 100%;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-right: 15px;
-}
-.search > input{
-    width: 40%;
-    background-color: rgb(255, 255, 255);
-    border: 0;
-    font-family: 'Poppins', sans-serif;
-    color: rgba(17, 17, 17, 0.705);
-    padding: 5px;
-    height: 60%;
-    border-radius: 10px;
-    font-weight: 800;
-
-}
-.search > select{
-    background-color: rgb(255, 255, 255);
-    border: 0;
-    font-family: 'Poppins', sans-serif;
-    color: rgba(17, 17, 17, 0.705);
-    padding: 15px;
-    border-radius: 10px;
-    font-weight: 800;
-    height: 60%;
-}
-.search > button{
-    padding: 13px;
-    border: 0px;
-    margin-left: 20px;
-    font-size: .9rem;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    background-color: rgb(41, 104, 219);
-    color: white;
-    display: flex;
     gap: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.tableBg{
+.table_filter > button:hover {
+    background-color: #3a3b6a;
+}
+
+.search {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    gap: 15px;
+}
+
+.search > input, .search > select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #212240;
+    transition: border-color 0.3s ease;
+}
+
+.search > input:focus, .search > select:focus {
+    border-color: #43456e;
+    outline: none;
+}
+
+.search > button {
+    padding: 10px 15px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    background-color: #212240;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search > button:hover {
+    background-color: #3a3b6a;
+}
+
+.tableBg {
     width: 100%;
     height: 90%;
-    display: flex;
-    justify-content: end;
-    background-color: #8f97793b;
-}
-.tableBg >table{
-    background-color: white;
-    width: 90%;
-    height: 100%;
-    border-radius: 15px;
-    overflow-y: auto;
-}
-.tableBg>table > thead> tr > th{
-    font-size: 1.2rem;
-    padding: 15px;
-    max-width: 40px;
-    color: black;
-    text-align: center;
-}
-.tableBg>table > thead{
-    border-bottom:1px solid rgba(0, 0, 0, 0.055) ;
+    background-color: #f1f2f6;
+    overflow: hidden;
 }
 
-.tableBg>table > tbody> tr > th{
-    font-size: 1.2rem;
-    padding: 20px;
-    color: black;
+.tableBg > table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.tableBg > table > thead > tr > th {
+    padding: 15px;
+    background-color: #212240;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
     text-align: center;
-    min-height: 50px;
+}
+
+.tableBg > table > tbody > tr {
+    transition: background-color 0.3s ease;
+}
+
+.tableBg > table > tbody > tr:hover {
+    background-color: #f1f2f6;
+}
+
+.tableBg table tbody tr th, .tableBg table tbody tr td {
+    padding: 15px;
+    font-size: 1rem;
+    color: #212240;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
 }
 
 .tableBg table tbody {
     display: block;
+    max-height: 70vh;
     overflow-y: auto;
-    max-height: 83vh;
-    width: 100%;
 }
 
 .tableBg table thead, .tableBg table tbody tr {
@@ -173,8 +190,65 @@ body, html{
     table-layout: fixed;
 }
 
-.tableBg table th, .tableBg table td {
-    text-align: center;
-    padding: 10px;
-    font-size: 1.2rem;
+/* Responsividade */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .table_options {
+        width: 100%;
+        flex-direction: row;
+        height: auto;
+        gap: 0;
+    }
+
+    .table_options > li {
+        height: 50px;
+        font-size: 0.9rem;
+    }
+
+    .table {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .table_options {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .table_filter {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .search {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tableBg table tbody tr th, .tableBg table tbody tr td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .table_filter > button,
+    .search > button {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+
+    .table_options > li > a {
+        font-size: 1rem;
+    }
+
+    .search > input, .search > select {
+        width: 100%;
+    }
 }
