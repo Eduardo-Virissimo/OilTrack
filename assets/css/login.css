@@ -8,7 +8,7 @@
 }
 
 body {
-  background: url("../img/background.jpg");
+  background: url("../img/background.png");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -41,13 +41,14 @@ body {
   background: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('../img/mapp.jpg');
+  background: linear-gradient(60deg, rgba(0,0,0,1) 0%, rgba(33,38,64,1) 100%);
   backdrop-filter: blur(30px);
   border-radius: 0 30% 20% 0;
   transition: border-radius .3s;
 }
 
 .image-layer {
+  opacity: 75%;
   position: relative;
 
 }
@@ -68,20 +69,23 @@ body {
   animation: scale-up 3s ease-in-out alternate infinite;
 }
 
-
 @keyframes scale-up{
-  to{
+  0%{
+    transform: scale(1);
+  }
+  50%{
     transform: scale(1.05);
   }
+  100%{
+    transform: scale(1);
+  }
 }
-
-
 
 .featured-words {
   text-align: center;
   color: #fff;
   width: 300px;
-
+  font-size: 25px;
 }
 
 .featured-words span {
