@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contate-nos</title>
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/hamburguer.css" />
+    <link rel="icon" href="assets/img/iconfav.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Botão Sanduíche -->
+    <button class="hamburger" onclick="toggleSidebar()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Menu Lateral -->
+    <div id="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="oilInfo.html">Tabelas</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+      <div class="credits">
+        <p>&copy; 2024 OilTrack</p>
+        <p>Desenvolvido por Eduardo, Enrik, Guilherme e Victor</p>
+      </div>
+    </div>
+
+    <div class="contact-container">
+      <h1>Contate-nos</h1>
+      <p>
+        Preencha o formulário abaixo para entrar em contato conosco.
+        Retornaremos em breve.
+      </p>
+
+      <form class="contact-form">
+        <label for="name">Nome</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Seu nome"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Seu email"
+          required
+        />
+
+        <label for="subject">Assunto</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Assunto da mensagem"
+          required
+        />
+
+        <label for="message">Mensagem</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          placeholder="Escreva sua mensagem"
+          required
+        ></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+  <script>
+    // Função para alternar a visibilidade do menu lateral
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      const hamburger = document.querySelector(".hamburger");
+      sidebar.classList.toggle("active");
+      hamburger.classList.toggle("active");
+    }
+  </script>
+</html>

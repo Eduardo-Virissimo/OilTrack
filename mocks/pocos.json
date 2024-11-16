@@ -1,0 +1,256 @@
+{
+  "poco": [
+    {
+      "name": "Poço Tupi",
+      "coord": [-23.7025, -44.0537],
+      "bacia": "Bacia de Santos",
+      "cidade": "Angra dos Reis",
+      "estado": "Rio de Janeiro",
+      "tipo_fluidos": "Óleo",
+      "tamanho_km2": 150.5
+    },
+    {
+      "name": "Poço Guará",
+      "coord": [-23.7050, -44.0550],
+      "bacia": "Bacia de Santos",
+      "cidade": "Angra dos Reis",
+      "estado": "Rio de Janeiro",
+      "tipo_fluidos": "Gás",
+      "tamanho_km2": 120.0
+    },
+    {
+      "name": "Poço Franco",
+      "coord": [-23.5999, -44.0866],
+      "bacia": "Bacia de Campos",
+      "cidade": "Campos dos Goytacazes",
+      "estado": "Rio de Janeiro",
+      "tipo_fluidos": "Óleo",
+      "tamanho_km2": 200.0
+    },
+    {
+      "name": "Poço Sapinhoá",
+      "coord": [-23.6441, -44.2137],
+      "bacia": "Bacia de Campos",
+      "cidade": "Campos dos Goytacazes",
+      "estado": "Rio de Janeiro",
+      "tipo_fluidos": "Gás",
+      "tamanho_km2": 85.3
+    },
+    {
+      "name": "Poço Carcará",
+      "coord": [-23.4810, -45.0048],
+      "bacia": "Bacia de Santos",
+      "cidade": "São João da Barra",
+      "estado": "Rio de Janeiro",
+      "tipo_fluidos": "Óleo",
+      "tamanho_km2": 170.2
+    },
+    {
+      "name": "Poço Parque das Conchas",
+      "coord": [-22.8091, -41.4008],
+      "bacia": "Bacia de Campos",
+      "cidade": "Macau",
+      "estado": "Rio Grande do Norte",
+      "tipo_fluidos": "Gás",
+      "tamanho_km2": 130.0
+    },
+    {
+      "name": "Poço Marlim",
+      "coord": [-22.7373, -41.3434],
+      "bacia": "Bacia de Campos",
+      "cidade": "Macau",
+      "estado": "Rio Grande do Norte",
+      "tipo_fluidos": "Óleo",
+      "tamanho_km2": 210.8
+    },
+    {
+      "name": "Poço C-21",
+      "coord": [-5.155002, -36.258680],
+      "bacia": "Bacia Potiguar",
+      "cidade": "Natal",
+      "estado": "Rio Grande do Norte",
+      "tipo_fluidos": "Gás",
+      "tamanho_km2": 100.0
+    },
+    {
+      "name": "Poço Atum",
+      "coord": [-10.3025, -37.5125],
+      "bacia": "Bacia de Sergipe-Alagoas",
+      "cidade": "Aracaju",
+      "estado": "Sergipe",
+      "tipo_fluidos": "Óleo",
+      "tamanho_km2": 90.0
+    },
+    {
+      "name": "Poço Coral",
+      "coord": [-10.4050, -37.5890],
+      "bacia": "Bacia de Sergipe-Alagoas",
+      "cidade": "Aracaju",
+      "estado": "Sergipe",
+      "tipo_fluidos": "Gás",
+      "tamanho_km2": 75.5
+    },
+    {
+      "name": "Poço Serra",
+      "coord": [-20.1292418,-40.3627071,12],
+      "bacia": "Bacia do Espírito Santo",
+      "cidade": "Angra dos Reis",
+      "estado": "Serra",
+      "tipo_fluidos": "Gás",
+      "tamanho_km2": 120.0
+    },
+    {
+      "name": "Poço Tupi",
+      "coord": [-23.7025, -44.0537],
+      "bacia": "Bacia de Santos",
+      "cidade": "Angra dos Reis",
+      "estado": "Rio de Janeiro",
+      "tipo_fluidos": "Óleo",
+      "tamanho_km2": 150.5
+    },
+    {
+      "name": "Poço Guará",
+      "coord": [-23.7050, -44.0550],
+      "bacia": "Bacia de Santos",
+      "cidade": "Angra dos Reis",
+      "estado": "Rio de Janeiro",
+      "tipo_fluidos": "Gás",
+      "tamanho_km2": 120.0
+    },
+    {
+      "name": "Poço Franco",
+      "coord": [-23.5999, -44.0866],
+      "bacia": "Bacia de Campos",
+      "cidade": "Campos dos Goytacazes",
+      "estado": "Rio de Janeiro",
+      "tipo_fluidos": "Óleo",
+      "tamanho_km2": 200.0
+    },
+    {
+      "name": "Poço Sapinhoá",
+      "coord": [-23.6441, -44.2137],
+      "bacia": "Bacia de Campos",
+      "cidade": "Campos dos Goytacazes",
+      "estado": "Rio de Janeiro",
+      "tipo_fluidos": "Gás",
+      "tamanho_km2": 85.3
+    },
+    {
+      "name": "Poço Camaleão",
+      "coord": [-19.7800, -40.0200],
+      "bacia": "Bacia do Espírito Santo",
+      "cidade": "Vitória",
+      "estado": "Espírito Santo",
+      "tipo_fluidos": "Óleo",
+      "tamanho_km2": 100.0
+    },
+    {
+      "name": "Poço Golfinho",
+      "coord": [-19.9000, -39.7000],
+      "bacia": "Bacia do Espírito Santo",
+      "cidade": "Vitória",
+      "estado": "Espírito Santo",
+      "tipo_fluidos": "Gás",
+      "tamanho_km2": 75.0
+    },
+    {
+      "name": "Poço Estrela",
+      "coord": [-4.9900, -36.2000],
+      "bacia": "Bacia Potiguar",
+      "cidade": "Mossoró",
+      "estado": "Rio Grande do Norte",
+      "tipo_fluidos": "Óleo",
+      "tamanho_km2": 90.0
+    },
+    {
+      "name": "Poço Rosa",
+      "coord": [-4.9500, -36.1000],
+      "bacia": "Bacia Potiguar",
+      "cidade": "Mossoró",
+      "estado": "Rio Grande do Norte",
+      "tipo_fluidos": "Gás",
+      "tamanho_km2": 110.0
+    },
+    {
+      "name": "Poço Jacaré",
+      "coord": [-12.2500, -38.6000],
+      "bacia": "Bacia do Recôncavo",
+      "cidade": "Salvador",
+      "estado": "Bahia",
+      "tipo_fluidos": "Óleo",
+      "tamanho_km2": 70.0
+    },
+    {
+      "name": "Poço Lua",
+      "coord": [-12.3500, -38.4500],
+      "bacia": "Bacia do Recôncavo",
+      "cidade": "Salvador",
+      "estado": "Bahia",
+      "tipo_fluidos": "Gás",
+      "tamanho_km2": 85.0
+    },
+    {
+      "name": "Poço Ouriço",
+      "coord": [-15.3000, -42.8000],
+      "bacia": "Bacia do São Francisco",
+      "cidade": "Montes Claros",
+      "estado": "Minas Gerais",
+      "tipo_fluidos": "Água",
+      "tamanho_km2": 60.0
+    },
+    {
+      "name": "Poço Coral Azul",
+      "coord": [-12.9000, -39.2000],
+      "bacia": "Bacia de Camamu-Almada",
+      "cidade": "Ilhéus",
+      "estado": "Bahia",
+      "tipo_fluidos": "Gás",
+      "tamanho_km2": 65.0
+    },
+    {
+      "name": "Poço Jequi",
+      "coord": [-16.9000, -39.5000],
+      "bacia": "Bacia de Jequitinhonha",
+      "cidade": "Porto Seguro",
+      "estado": "Bahia",
+      "tipo_fluidos": "Óleo",
+      "tamanho_km2": 80.0
+    },
+    {
+      "name": "Poço Diamante",
+      "coord": [-16.7000, -39.5000],
+      "bacia": "Bacia de Jequitinhonha",
+      "cidade": "Porto Seguro",
+      "estado": "Bahia",
+      "tipo_fluidos": "Gás",
+      "tamanho_km2": 100.0
+    },
+    {
+      "name": "Poço Sertão",
+      "coord": [-15.2000, -42.8000],
+      "bacia": "Bacia do São Francisco",
+      "cidade": "Montes Claros",
+      "estado": "Minas Gerais",
+      "tipo_fluidos": "Óleo",
+      "tamanho_km2": 95.0
+    },
+    {
+      "name": "Poço Sol",
+      "coord": [-15.1000, -42.9000],
+      "bacia": "Bacia do São Francisco",
+      "cidade": "Montes Claros",
+      "estado": "Minas Gerais",
+      "tipo_fluidos": "Gás",
+      "tamanho_km2": 75.0
+    },
+    {
+      "name": "Poço Alagoas",
+      "coord": [-9.5000, -36.5000],
+      "bacia": "Bacia de Alagoas",
+      "cidade": "Maceió",
+      "estado": "Alagoas",
+      "tipo_fluidos": "Gás",
+      "tamanho_km2": 65.0
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "bacias": [
+    {
+      "name": "Bacia de Campos",
+      "color": "orange",
+      "coords": [
+        [-22.0, -41.5],
+        [-23.2, -42.3],
+        [-23.0, -40.3],
+        [-22.0, -40.1],
+        [-22.0, -41.5]
+      ],
+      "estado": "Rio de Janeiro",
+      "cidade": "Macaé",
+      "tamanho_km2": 100000,
+      "tipo_de_fluido": "Petróleo leve"
+    },
+    {
+      "name": "Bacia de Santos",
+      "color": "blue",
+      "coords": [
+        [-23.5, -45.5],
+        [-24.5, -46.5],
+        [-24.0, -43.8],
+        [-23.2, -43.5],
+        [-23.5, -45.5]
+      ],
+      "estado": "São Paulo",
+      "cidade": "Santos",
+      "tamanho_km2": 350000,
+      "tipo_de_fluido": "Gás natural"
+    },
+    {
+      "name": "Bacia do Espírito Santo",
+      "color": "green",
+      "coords": [
+        [-19.5, -39.8],
+        [-20.7, -40.9],
+        [-21.0, -40.2],
+        [-20.0, -39.6],
+        [-19.5, -39.8]
+      ],
+      "estado": "Espírito Santo",
+      "cidade": "Vitória",
+      "tamanho_km2": 50000,
+      "tipo_de_fluido": "Petróleo leve"
+    },
+    {
+      "name": "Bacia Potiguar",
+      "color": "red",
+      "coords": [
+        [-4.8, -36.0],
+        [-5.4, -36.8],
+        [-5.8, -36.1],
+        [-5.2, -35.8],
+        [-4.8, -36.0]
+      ],
+      "estado": "Rio Grande do Norte",
+      "cidade": "Mossoró",
+      "tamanho_km2": 47000,
+      "tipo_de_fluido": "Petróleo"
+    },
+    {
+      "name": "Bacia do Recôncavo",
+      "color": "purple",
+      "coords": [
+        [-12.1, -38.4],
+        [-12.6, -39.2],
+        [-12.8, -38.3],
+        [-12.3, -38.1],
+        [-12.1, -38.4]
+      ],
+      "estado": "Bahia",
+      "cidade": "Salvador",
+      "tamanho_km2": 11000,
+      "tipo_de_fluido": "Petróleo"
+    },
+    {
+      "name": "Bacia de Sergipe-Alagoas",
+      "color": "cyan",
+      "coords": [
+        [-10.2, -37.6],
+        [-10.9, -38.3],
+        [-11.1, -37.5],
+        [-10.4, -37.2],
+        [-10.2, -37.6]
+      ],
+      "estado": "Sergipe e Alagoas",
+      "cidade": "Aracaju",
+      "tamanho_km2": 40000,
+      "tipo_de_fluido": "Gás natural"
+    },
+    {
+      "name": "Bacia de Alagoas",
+      "color": "magenta",
+      "coords": [
+        [-9.2, -36.4],
+        [-9.8, -37.0],
+        [-10.0, -36.5],
+        [-9.6, -36.1],
+        [-9.2, -36.4]
+      ],
+      "estado": "Alagoas",
+      "cidade": "Maceió",
+      "tamanho_km2": 15000,
+      "tipo_de_fluido": "Petróleo"
+    },
+    {
+      "name": "Bacia de Camamu-Almada",
+      "color": "yellow",
+      "coords": [
+        [-12.7, -39.1],
+        [-13.5, -39.6],
+        [-13.8, -39.0],
+        [-13.2, -38.7],
+        [-12.7, -39.1]
+      ],
+      "estado": "Bahia",
+      "cidade": "Ilhéus",
+      "tamanho_km2": 5000,
+      "tipo_de_fluido": "Petróleo"
+    },
+    {
+      "name": "Bacia de Jequitinhonha",
+      "color": "brown",
+      "coords": [
+        [-16.4, -39.4],
+        [-17.0, -40.0],
+        [-17.2, -39.5],
+        [-16.7, -39.2],
+        [-16.4, -39.4]
+      ],
+      "estado": "Bahia",
+      "cidade": "Porto Seguro",
+      "tamanho_km2": 10000,
+      "tipo_de_fluido": "Gás natural"
+    },
+    {
+      "name": "Bacia do São Francisco",
+      "color": "grey",
+      "coords": [
+        [-14.9, -43.1],
+        [-15.5, -43.4],
+        [-15.8, -42.8],
+        [-15.1, -42.5],
+        [-14.9, -43.1]
+      ],
+      "estado": "Minas Gerais",
+      "cidade": "Montes Claros",
+      "tamanho_km2": 15000,
+      "tipo_de_fluido": "Petróleo leve"
+    }
+  ]
+}

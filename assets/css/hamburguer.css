@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo e altura total */
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", sans-serif; /* Definindo a fonte Open Sans */
+}
+
+/* Mapa ocupa toda a tela */
+#map {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Menu lateral sobre o mapa */
+#sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -250px; /* Escondido fora da tela inicialmente */
+  background: #212640;
+  padding: 40px;
+  transition: 0.3s ease;
+  z-index: 1000;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  /*justify-content: center; /* Centraliza verticalmente */
+}
+
+/* Menu ativo */
+#sidebar.active {
+  left: 0;
+}
+
+/* Título do menu */
+#sidebar h2 {
+  color: rgba(255, 255, 255, 0.5); /* Cor do título do menu */
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 28px; /* Tamanho maior para o título */
+  font-weight: bold; /* Negrito para o título */
+}
+
+/* Links do menu */
+#sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%; /* Para que os links ocupem a largura total */
+}
+
+#sidebar ul li {
+  margin: 30px 0;
+  text-align: center; /* Centraliza o texto dos links */
+  overflow: visible; /* Garante que o link tenha espaço para crescer */
+}
+
+#sidebar ul li a {
+  color: #dad7cd; /* Cor dos links */
+  text-decoration: none;
+  font-size: 20px; /* Tamanho maior para os links */
+  transition: color 0.3s, transform 0.3s;
+  font-weight: bold; /* Negrito para os links */
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+#sidebar ul li a:hover {
+  color: #181d31; /* Cor dos links ao passar o mouse */
+  transform: scale(1.2);
+}
+
+/* Botão sanduíche */
+.hamburger {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #212640; /* Cor do botão */
+  cursor: pointer;
+  z-index: 1100;
+  outline: none;
+  transition: left 0.3s ease;
+}
+
+/* Itens de barra do botão */
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #212640; /* Cor das barras do botão */
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Alternância do botão para "X" */
+.hamburger.active {
+  left: 270px; /* Empurrado para a direita quando o menu está aberto */
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Estilo do título de créditos */
+#sidebar h3 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 18px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Estilo dos nomes de créditos */
+#sidebar ul.credits {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#sidebar ul.credits li {
+  color: rgba(255, 255, 255, 0.8); /* Cor dos nomes */
+  font-size: 16px;
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.credits {
+  font-size: 12px;
+  color: #ccc;
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  margin-top: auto; /* Ensures credits are at the bottom */
+}
+
+#search-container {
+  
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#search-input {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

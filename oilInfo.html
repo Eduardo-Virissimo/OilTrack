@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.20/jspdf.plugin.autotable.min.js"></script>
+    <link rel="icon" href="assets/img/iconfav.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/oilInfo.css" />
+    <link rel="stylesheet" href="assets/css/hamburguer.css" />
+  </head>
+  <body>
+    <!-- Botão Sanduíche -->
+    <button class="hamburger" onclick="toggleSidebar()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Menu Lateral -->
+    <div id="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="oilInfo.html">Tabelas</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+      <div class="credits">
+        <p>&copy; 2024 OilTrack</p>
+        <p>Desenvolvido por Eduardo, Enrik, Guilherme e Victor</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="table_options">
+        <li>
+          <a href="#" onclick="baciaTable()">
+            <i class="bx bx-globe"></i> Bacia</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="pocoTable()"
+            ><i class="bx bxs-filter-alt"></i> Poços</a
+          >
+        </li>
+      </div>
+      <div class="table">
+        <div class="table_filter">
+          <button onclick="exportarParaPDF()">
+            <i class="bx bx-export"></i> Export
+          </button>
+          <div class="search">
+            <select name="Filtro" onchange="filtroSelect()" id="filterSelect">
+              <option disabled selected>Filtrar por</option>
+              <option id="alphabet" value="alphabet">Ordem Alfabetica</option>
+              <option id="size" value="size">Tamanho</option>
+              <option id="type" value="type">Tipo de fluido</option>
+            </select>
+
+            <input
+              onchange="buscaNome()"
+              placeholder="Escreva o nome:"
+              id="filterInput"
+              type="text"
+            />
+          </div>
+        </div>
+        <div class="tableBg">
+          <table id="tb">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Estado</th>
+                <th>Cidade</th>
+                <th>Tamanho em km²</th>
+                <th>Tipo de fluido</th>
+              </tr>
+            </thead>
+            <tbody id="tBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    // Função para alternar a visibilidade do menu lateral
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      const hamburger = document.querySelector(".hamburger");
+      sidebar.classList.toggle("active");
+      hamburger.classList.toggle("active");
+    }
+  </script>
+  <script src="./assets/js/tables.js"></script>
+</html>
