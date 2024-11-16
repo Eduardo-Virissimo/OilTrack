@@ -1,52 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OilTrack</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="assets/css/hamburguer.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
-    <link rel="icon" href="assets/img/iconfav.png" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/pesquisar.css" />
+    <link rel="icon" href="assets/img/iconfav.png" type="image/x-icon" />
+  </head>
+  <body>
     <!-- Botão Sanduíche -->
     <button class="hamburger" onclick="toggleSidebar()">
-        <span></span>
-        <span></span>
-        <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
 
     <!-- Menu Lateral -->
     <div id="sidebar">
-        <h2>Menu</h2>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="oilInfo.html">Tabelas</a></li>
-            <li><a href="contact.html">Contato</a></li>
-        </ul>
-        
-        <!-- Credits Section -->
-        <div class="credits">
-            <p>&copy; 2024 OilTrack</p>
-            <p>Desenvolvido por Eduardo, Enrik, Guilherme e Victor</p>
-        </div>
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="oilInfo.html">Tabelas</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+      <div class="credits">
+        <p>&copy; 2024 OilTrack</p>
+        <p>Desenvolvido por Eduardo, Enrik, Guilherme e Victor</p>
+      </div>
     </div>
 
     <!-- Div do Mapa -->
     <div id="map"></div>
 
+    <!-- Aba de Pesquisa Lateral -->
+    <div id="search-tab">
+      <button class="search-toggle" onclick="toggleSearch()">🔍</button>
+      <div id="search-box">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Nome do poço ou bacia"
+          oninput="searchMap()"
+        />
+      </div>
+    </div>
+
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
-        // Função para alternar a visibilidade do menu lateral
-        function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            const hamburger = document.querySelector('.hamburger');
-            sidebar.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        }
+      function toggleSidebar() {
+        const sidebar = document.getElementById("sidebar");
+        const hamburger = document.querySelector(".hamburger");
+        sidebar.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      }
+
+      function toggleSearch() {
+        const searchBox = document.getElementById("search-box");
+        searchBox.classList.toggle("active");
+      }
+
+      function searchMap() {
+        const searchInput = document.getElementById("search-input").value;
+        console.log("Pesquisando por:", searchInput);
+      }
     </script>
     <script src="./mocks/mocks.js"></script>
-    <script src="api.js"></script>
-</body>
+    <script src="./assets/js/api.js"></script>
+  </body>
 </html>

@@ -158,3 +158,21 @@ html {
   padding-top: 15px;
   margin-top: auto; /* Ensures credits are at the bottom */
 }
+
+#search-container {
+  
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#search-input {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

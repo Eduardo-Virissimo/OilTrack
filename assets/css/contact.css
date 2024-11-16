@@ -28,7 +28,7 @@ body {
 
 .contact-container h1 {
     font-size: 2rem;
-    color: #212240;
+    color: #212640;
     margin-bottom: 15px;
 }
 
@@ -79,7 +79,7 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
     color: #fff;
-    background-color: #212240;
+    background-color: #212640;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
